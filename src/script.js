@@ -15,4 +15,13 @@ document.addEventListener('DOMContentLoaded',()=>
         menu.classList.remove('fa-times')
         navbar.classList.remove('active')
     }
+
+    if(window.scrollY>30)
+    {
+        document.querySelector('#scroll-top').classList.add('active')
+    }
+    else
+    {
+        document.querySelector('#scroll-top').classList.remove('active')
+    }
 })
